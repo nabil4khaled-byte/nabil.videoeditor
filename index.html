@@ -86,6 +86,10 @@
 .ve3d-paybox code{background:rgba(0,0,0,.4);padding:6px 12px;border-radius:8px;display:inline-block;margin:8px 0;word-break:break-all}
 .reveal{opacity:0;transform:translateY(40px);transition:.7s}.reveal.show{opacity:1;transform:none}
 .ve3d-wa{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;z-index:99}
+.gfx-card{background:#0d1322;border:1px solid rgba(255,255,255,.1);border-radius:16px;overflow:hidden;cursor:pointer;transition:.3s;text-decoration:none;color:#fff;display:block}
+.gfx-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(23,105,255,.35);border-color:#1769ff}
+.gfx-card .yt-thumb{aspect-ratio:4/3}
+.yt-drive-badge.gfx{background:#1769ff;color:#fff}
 footer{text-align:center;padding:30px;color:var(--muted);font-size:13px;border-top:1px solid rgba(255,255,255,.08)}
 </style>
 </head>
@@ -93,19 +97,19 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px;border-t
 <div class="ve3d-wrap" id="ve3d">
 <nav class="ve3d-nav">
 <div class="ve3d-logo">nabilabouras<span>.edit</span></div>
-<div class="ve3d-nav-links"><a href="#work">Work</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#pay">Pay</a><a href="#contact">Contact</a></div>
+<div class="ve3d-nav-links"><a href="#work">Work</a><a href="#design">Design</a><a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#pay">Pay</a><a href="#contact">Contact</a></div>
 <a class="ve3d-btn" href="https://wa.me/201025537535" target="_blank">Order Now</a>
 </nav>
 <header class="ve3d-hero">
 <div class="ve3d-cube-bg"></div>
 <div class="float-el f1">🎬 Premiere Pro</div><div class="float-el f2">✨ After Effects</div>
-<div class="float-el f3">🔥 Drive + Vimeo + YouTube</div><div class="float-el f4">⭐ 65+ Videos</div>
+<div class="float-el f3">🔥 Drive + Vimeo + YouTube</div><div class="float-el f4">⭐ 69+ Videos</div>
 <div class="ve3d-hero-inner" id="heroInner">
-<div class="ve3d-badge">● 65 videos live from Drive</div>
+<div class="ve3d-badge">● 69 videos live now</div>
 <h1 class="ve3d-title">I EDIT VIDEOS<br><span class="gold">THAT GO VIRAL</span></h1>
 <p class="ve3d-sub">All works below play instantly — Drive preview + Vimeo player, YouTube-style with tabs.</p>
 <div class="ve3d-hero-btns"><a class="ve3d-btn" href="#work">▶ Watch All Work</a><a class="ve3d-btn blue" href="#pay">💳 Pay / Book</a></div>
-<div class="ve3d-stats"><div class="ve3d-stat"><b>65+</b><span>Videos</span></div><div class="ve3d-stat"><b>Drive</b><span>Instant Play</span></div><div class="ve3d-stat"><b>48h</b><span>Delivery</span></div><div class="ve3d-stat"><b>4.9★</b><span>Rating</span></div></div>
+<div class="ve3d-stats"><div class="ve3d-stat"><b>69+</b><span>Videos</span></div><div class="ve3d-stat"><b>Drive</b><span>Instant Play</span></div><div class="ve3d-stat"><b>48h</b><span>Delivery</span></div><div class="ve3d-stat"><b>4.9★</b><span>Rating</span></div></div>
 </div>
 </header>
 <section class="ve3d-sec" id="services">
@@ -115,8 +119,10 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px;border-t
 <div class="ve3d-card"><div class="icon">⭐</div><h3>Featured</h3><p>Showreel + Vimeo film.</p><br><a class="ve3d-btn blue" href="#work-featured" onclick="filterVideos('featured')">Open Featured</a></div>
 <div class="ve3d-card"><div class="icon">🇬🇧</div><h3>English Course</h3><p>6 lessons full editing.</p><br><a class="ve3d-btn blue" href="#work-course" onclick="filterVideos('course')">Open Course</a></div>
 <div class="ve3d-card"><div class="icon">🎬</div><h3>Edits Batch 1</h3><p>11 horizontal projects.</p><br><a class="ve3d-btn blue" href="#work-group1" onclick="filterVideos('group1')">Open Batch 1</a></div>
-<div class="ve3d-card"><div class="icon">📱</div><h3>Reels & Shorts</h3><p>19 vertical reels 9:16\.</p><br><a class="ve3d-btn blue" href="#work-group2" onclick="filterVideos('group2')">Open Reels</a></div>
-<div class="ve3d-card"><div class="icon">💼</div><h3>Full Projects</h3><p>27 horizontal projects\.</p><br><a class="ve3d-btn blue" href="#work-group3" onclick="filterVideos('group3')">Open Projects</a></div>
+<div class="ve3d-card"><div class="icon">📱</div><h3>Reels & Shorts</h3><p>21 vertical reels 9:16.</p><br><a class="ve3d-btn blue" href="#work-group2" onclick="filterVideos('group2')">Open Reels</a></div>
+<div class="ve3d-card"><div class="icon">💼</div><h3>Full Projects</h3><p>27 horizontal projects.</p><br><a class="ve3d-btn blue" href="#work-group3" onclick="filterVideos('group3')">Open Projects</a></div>
+<div class="ve3d-card"><div class="icon">🏠</div><h3>Real Estate</h3><p>2 property tours in English.</p><br><a class="ve3d-btn blue" href="#work-estate" onclick="filterVideos('estate')">Open Real Estate</a></div>
+<div class="ve3d-card"><div class="icon">🎨</div><h3>Graphic Design</h3><p>Logos, social media &amp; branding.</p><br><a class="ve3d-btn blue" href="#design">Open Design</a></div>
 <div class="ve3d-card featured"><div class="icon">▶</div><h3>YouTube Channel</h3><p>Nabil Abouras channel.</p><br><a class="ve3d-btn" href="https://www.youtube.com/@NabilAbouras-tb6yv" target="_blank">Visit Channel</a></div>
 </div>
 </section>
@@ -128,12 +134,13 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px;border-t
 <a class="ve3d-btn" style="background:#ff0000;color:#fff!important" href="https://www.youtube.com/@NabilAbouras-tb6yv" target="_blank">Subscribe on YouTube</a>
 </div>
 <div class="yt-tabs" id="ytTabs">
-<button data-filter="all" class="active">🔥 All (65)</button>
+<button data-filter="all" class="active">🔥 All (69)</button>
 <button data-filter="featured">⭐ Featured (2)</button>
 <button data-filter="course">🇬🇧 Course (6)</button>
 <button data-filter="group1">🎬 Batch 1 (11)</button>
-<button data-filter="group2">📱 Reels (19)</button>
+<button data-filter="group2">📱 Reels (21)</button>
 <button data-filter="group3">💼 Projects (27)</button>
+<button data-filter="estate">🏠 Real Estate (2)</button>
 </div>
 <div class="yt-search"><input id="ytSearch" placeholder="🔍 Search video title... ابحث عن فيديو" oninput="onSearch(this.value)" /></div>
 <div class="yt-count" id="ytCount"></div>
@@ -149,6 +156,21 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px;border-t
 </div>
 </div>
 </div>
+<section class="ve3d-sec" id="design">
+<h2 class="ve3d-sec-title">Graphic <span>Design</span></h2>
+<p class="ve3d-sec-sub">Logos • Social media • Branding — click any project to view it on Behance</p>
+<div class="yt-grid">
+<a class="gfx-card" href="https://www.behance.net/gallery/235202423/SOCIAL-MEDIA" target="_blank"><div class="yt-thumb"><img loading="lazy" src="https://mir-s3-cdn-cf.behance.net/projects/404/6d0524235202423.Y3JvcCwyMDQ4LDE2MDEsMCwyMjM.png" alt="Social media designs"/><div class="yt-drive-badge gfx">Bē GRAPHIC</div></div><div class="yt-info"><div class="yt-avatar" style="background:linear-gradient(135deg,#1769ff,#000)">B</div><div><b>SOCIAL MEDIA</b><span>Behance • Social media designs</span></div></div></a>
+<a class="gfx-card" href="https://www.behance.net/gallery/219160281/LOGOS" target="_blank"><div class="yt-thumb"><img loading="lazy" src="https://mir-s3-cdn-cf.behance.net/projects/404/757dff219160281.Y3JvcCwzODM1LDMwMDAsODUsMA.jpg" alt="Logos collection"/><div class="yt-drive-badge gfx">Bē GRAPHIC</div></div><div class="yt-info"><div class="yt-avatar" style="background:linear-gradient(135deg,#1769ff,#000)">B</div><div><b>LOGOS</b><span>Behance • Logo collection</span></div></div></a>
+<a class="gfx-card" href="https://www.behance.net/gallery/219290781/MEDIA-OUTLETS" target="_blank"><div class="yt-thumb"><img loading="lazy" src="https://mir-s3-cdn-cf.behance.net/projects/404/5a42b3219290781.Y3JvcCwxMDgwLDg0NCwwLDExNw.jpg" alt="Media outlets"/><div class="yt-drive-badge gfx">Bē GRAPHIC</div></div><div class="yt-info"><div class="yt-avatar" style="background:linear-gradient(135deg,#1769ff,#000)">B</div><div><b>MEDIA OUTLETS</b><span>Behance • Media design</span></div></div></a>
+<a class="gfx-card" href="https://www.behance.net/gallery/213348711/Perfumora-Logo" target="_blank"><div class="yt-thumb"><img loading="lazy" src="https://mir-s3-cdn-cf.behance.net/projects/404/3dcee0213348711.Y3JvcCwzMDAwLDIzNDYsMCw4MjQ.jpg" alt="Perfumora logo"/><div class="yt-drive-badge gfx">Bē GRAPHIC</div></div><div class="yt-info"><div class="yt-avatar" style="background:linear-gradient(135deg,#1769ff,#000)">B</div><div><b>Perfumora Logo</b><span>Behance • Perfume branding</span></div></div></a>
+<a class="gfx-card" href="https://www.behance.net/gallery/193787409/Photo-manipulation" target="_blank"><div class="yt-thumb"><img loading="lazy" src="https://mir-s3-cdn-cf.behance.net/projects/404/0c4372193787409.Y3JvcCwyODc2LDIyNTAsNTYyLDA.png" alt="Photo manipulation"/><div class="yt-drive-badge gfx">Bē GRAPHIC</div></div><div class="yt-info"><div class="yt-avatar" style="background:linear-gradient(135deg,#1769ff,#000)">B</div><div><b>Photo Manipulation</b><span>Behance • Creative retouch</span></div></div></a>
+<a class="gfx-card" href="https://www.behance.net/gallery/214136925/Bussiness-Cards" target="_blank"><div class="yt-thumb"><img loading="lazy" src="https://mir-s3-cdn-cf.behance.net/projects/404/8f0ed9214136925.Y3JvcCwzODM1LDMwMDAsODUsMA.jpg" alt="Business cards"/><div class="yt-drive-badge gfx">Bē GRAPHIC</div></div><div class="yt-info"><div class="yt-avatar" style="background:linear-gradient(135deg,#1769ff,#000)">B</div><div><b>Business Cards</b><span>Behance • Print design</span></div></div></a>
+<a class="gfx-card" href="https://www.behance.net/gallery/218330049/osos-najd-logo" target="_blank"><div class="yt-thumb"><img loading="lazy" src="https://mir-s3-cdn-cf.behance.net/projects/404/74b195218330049.Y3JvcCwxMzQyLDEwNTAsMjksMA.jpg" alt="Osos Najd logo"/><div class="yt-drive-badge gfx">Bē GRAPHIC</div></div><div class="yt-info"><div class="yt-avatar" style="background:linear-gradient(135deg,#1769ff,#000)">B</div><div><b>Osos Najd Logo</b><span>Behance • Brand identity</span></div></div></a>
+<a class="gfx-card" href="https://www.behance.net/gallery/216122371/emad-afandi" target="_blank"><div class="yt-thumb"><img loading="lazy" src="https://mir-s3-cdn-cf.behance.net/projects/404/df273a216122371.Y3JvcCwxMzgwLDEwODAsMjcwLDA.jpg" alt="Emad Afandi branding"/><div class="yt-drive-badge gfx">Bē GRAPHIC</div></div><div class="yt-info"><div class="yt-avatar" style="background:linear-gradient(135deg,#1769ff,#000)">B</div><div><b>Emad Afandi</b><span>Behance • Brand identity</span></div></div></a>
+</div>
+<div class="ve3d-hero-btns"><a class="ve3d-btn blue" href="https://www.behance.net/nabilabouras" target="_blank">View All Work on Behance</a><a class="ve3d-btn" href="https://wa.me/201025537535?text=Hi!%20I%20want%20graphic%20design" target="_blank">Order Design on WhatsApp</a></div>
+</section>
 <section class="ve3d-sec" id="pricing">
 <h2 class="ve3d-sec-title">Simple <span>Pricing</span></h2>
 <div class="ve3d-grid">
@@ -167,9 +189,9 @@ footer{text-align:center;padding:30px;color:var(--muted);font-size:13px;border-t
 </section>
 <section class="ve3d-sec" id="contact" style="text-align:center">
 <h2 class="ve3d-sec-title">Let's Create <span>Something Viral</span></h2>
-<div class="ve3d-hero-btns"><a class="ve3d-btn" href="https://wa.me/201025537535?text=Hi!" target="_blank">💬 WhatsApp</a><a class="ve3d-btn blue" href="https://www.youtube.com/@NabilAbouras-tb6yv" target="_blank">📺 YouTube Channel</a></div>
+<div class="ve3d-hero-btns"><a class="ve3d-btn" href="https://wa.me/201025537535?text=Hi!" target="_blank">💬 WhatsApp</a><a class="ve3d-btn blue" href="https://www.youtube.com/@NabilAbouras-tb6yv" target="_blank">📺 YouTube Channel</a><a class="ve3d-btn blue" href="https://www.behance.net/nabilabouras" target="_blank">🎨 Behance</a></div>
 </section>
-<footer>© 2026 nabilabouras.edit — 65 videos • Drive + Vimeo + YouTube</footer>
+<footer>© 2026 nabilabouras.edit — 69 videos • Drive + Vimeo + YouTube + Behance design</footer>
 </div>
 <a class="ve3d-wa" href="https://wa.me/201025537535" target="_blank">✆</a>
 <script>
@@ -240,9 +262,13 @@ const VIDEOS = [
 {type:"drive",id:"1qC0_InsciicNNPwdgKnfDmPJUYkZv8HK",title:"Full Project 26 - Horizontal",cat:"group3",dur:"HD"},
 {type:"drive",id:"1-aENlzTTYxuR_qMuqxUxvsCqrRiJ4Ijf",title:"Vertical Reels 19 - 9:16",cat:"group2",dur:"HD"},
 {type:"drive",id:"1KHcg2Zc6hHm6RJIFyhGTrrj-e0hrqMdo",title:"Full Project 27 - Horizontal",cat:"group3",dur:"HD"},
+{type:"drive",id:"11Pdxme9vj5QWpsecXyjIwmXn_Wh6W5SH",title:"Vertical Reels 20 - 9:16",cat:"group2",dur:"HD"},
+{type:"drive",id:"1Df3D1-KluEuI9vFRD0yfuEVbxAP728-q",title:"Vertical Reels 21 - 9:16",cat:"group2",dur:"HD"},
+{type:"drive",id:"1oV4a2O7aIYLHJ6cBF85aLYS03OjYifQ4",title:"Luxury Villa Tour - Real Estate",cat:"estate",dur:"HD"},
+{type:"drive",id:"1YaeCegTj25tue8EhoeFrxEGtqlsnhHjP",title:"Modern Apartment Showcase - Real Estate",cat:"estate",dur:"HD"},
 ];
-const CAT_LABEL={featured:"Featured • Drive",course:"English Course • Drive",group1:"Horizontal • 16:9",group2:"Vertical Reels • 9:16",group3:"Horizontal • 16:9"};
-const AVATAR={featured:"F",course:"E",group1:"1",group2:"R",group3:"P"};
+const CAT_LABEL={featured:"Featured • Drive",course:"English Course • Drive",group1:"Horizontal • 16:9",group2:"Vertical Reels • 9:16",group3:"Horizontal • 16:9",estate:"Real Estate • EN"};
+const AVATAR={featured:"F",course:"E",group1:"1",group2:"R",group3:"P",estate:"H"};
 let curFilter="all",curSearch="";
 function thumbFor(v){
 if(v.type==="vimeo") return "https://vumbnail.com/"+v.id+".jpg";
@@ -260,6 +286,7 @@ function badgeFor(v){
 if(v.type==="vimeo") return '<div class="yt-drive-badge vimeo">VIMEO</div>';
 if(v.cat==="course") return '<div class="yt-drive-badge course">COURSE</div>';
 if(v.cat==="group2") return '<div class="yt-drive-badge course">📱 REEL</div>';
+if(v.cat==="estate") return '<div class="yt-drive-badge gfx">🏠 ESTATE</div>';
 return '<div class="yt-drive-badge">▶ DRIVE</div>';
 }
 const grid=document.getElementById('ytGrid'),countEl=document.getElementById('ytCount');
@@ -290,7 +317,7 @@ document.getElementById('driveModal').classList.add('open');document.body.style.
 function closeDrive(){document.getElementById('driveModal').classList.remove('open');document.getElementById('driveFrame').src="";document.body.style.overflow="";}
 document.getElementById('driveModal').addEventListener('click',e=>{if(e.target.id==="driveModal")closeDrive();});
 document.addEventListener('keydown',e=>{if(e.key==="Escape")closeDrive();});
-(function(){const h=location.hash.replace('#work-','');if(['featured','course','group1','group2','group3','all'].includes(h))curFilter=h;renderVideos(curFilter);})();
+(function(){const h=location.hash.replace('#work-','');if(['featured','course','group1','group2','group3','estate','all'].includes(h))curFilter=h;renderVideos(curFilter);})();
 const heroInner=document.getElementById('heroInner');
 document.addEventListener('mousemove',e=>{const x=(e.clientX/window.innerWidth-.5)*16,y=(e.clientY/window.innerHeight-.5)*16;if(heroInner)heroInner.style.transform=`rotateY(${x*.4}deg) rotateX(${-y*.4}deg)`;});
 </script>
